@@ -70,8 +70,29 @@
 >              good_points.append(m)
 >      ```       
 >      
->      
->      
+>    - Find matches with sift algorithm (Photo and reference).   
+>      -  __Convert to coordinates (x, y)__
+>      -  __Find H matrix with cv2.findhomography function__
+>      ```
+>      # Homography
+>      query_pts = np.float32([kp_Query_img[m.queryIdx].pt for m in good_points]).reshape(-1, 1, 2)
+>      train_pts = np.float32([kp_GrayFrame[m.trainIdx].pt for m in good_points]).reshape(-1, 1, 2)
+>      H_matrix, mask = cv2.findHomography(query_pts, train_pts, cv2.RANSAC, 5.0)
+>      matches_mask = mask.ravel().tolist()
+>      ```     
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
 >
 >
 >
