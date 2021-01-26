@@ -11,5 +11,12 @@
 > 1. Working on a photo (One frame)
 >    - Take a photo with the image in it.
 >    ![title](/Images/train_img.PNG)
+>     
+>    In this photo we can see the train image
+>
+>    - Find a good reference to the image.
+>    ![title](/Images/Query_img.PNG)
+>
+>
 >
 >
