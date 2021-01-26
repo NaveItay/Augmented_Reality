@@ -42,3 +42,30 @@
 >          ...
 >          kp_GrayFrame, desc_GrayFrame = sift.detectAndCompute(Train_img, mask=None)
 >      ```
+>
+>
+>
+>      -  __Flann Based Matcher has been used because it works faster than BF matcher for large Data sets, it contains a collection of algorithms optimized for fast nearest neighbor search in large datasets and for high dimensional features.__
+>      ```
+>      # Feature matching
+>      index_params = dict(algorithm=0, trees=5)
+>      search_params = dict()
+>      Flann = cv2.FlannBasedMatcher(index_params, search_params)
+>      ...
+>      ....
+>      while cap.isOpened():
+>          ..
+>          ...
+>          matches = Flann.knnMatch(desc_Query_img, desc_GrayFrame, k=2)
+>      ```     
+>      
+>      
+>      
+>      
+>      
+>      
+>      ```
+>
+>
+>
+>
