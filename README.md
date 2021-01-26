@@ -184,15 +184,25 @@
 >         ImagePoints = dst
 >         ```
 >
+>    - Use cv2.solvePnP algorithm to find rotation vector and translation vector.
+>      ```
+>      # solvePnP
+>      _ret, rotationVectors, translationVectors = cv2.solvePnP(ObjectPoints, ImagePoints, camera_matrix, dist_coeffs)
+>      ```
+>      -  __camera matrix and distortion coefficients from camera calibration.__
 >
->
->
->
->
->
->
->
->
+>    - Draw a 3D object.
+>      -  __The 3d object is colorless because the xlib library is not supported by windows and it is not the main purpose of this project.__
+>      -  __If you got an error change the library to draw the image. (put the use of this library in TRY-EXCEPT block).__
+>         ```
+>         def make_uncurrent(self):
+>           try:
+>             import pyglet.gl.xlib
+>             pyglet.gl.xlib.glx.glXMakeContextCurrent(self._window.context.x_display, 0,0, None)
+>           except:
+>             pass    
+>         ```
+>         ![title](/Images/3D_result.PNG)
 >
 >
 >
