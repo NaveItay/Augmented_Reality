@@ -118,12 +118,12 @@
 ###### Execution stages (Goal B – Camera calibration):
 >
 >      - Print Chessboard for calibration.
->      ```
+>        ```
 >      # Config
 >      square_size = 3.5   # cm
 >      pattern_size = (7, 4)
->      ```
->      ![title](/Images/chessboard_for_calibration.PNG)
+>        ```
+>        ![title](/Images/chessboard_for_calibration.PNG)
 >
 >
 >
