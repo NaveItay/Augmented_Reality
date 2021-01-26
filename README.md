@@ -93,6 +93,29 @@
 >      -  __Before pasting this image inside the photo, we need to reset all the pixels that are in the position of the image.__
 >
 >
+>    - Perform transformation (with same H matrix) to a blank white picture. 
+>         ![title](/Images/mask_warped.PNG)
+>
+>
+>    - Inverse the blank mask.
+>         ![title](/Images/inv_mask_warped.PNG)
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
 >
 >
 >
