@@ -30,4 +30,15 @@
 >         
 >           
 >         ![title](/Images/MachesPlot.PNG)
->
+>      -  __Find key points and descriptors in query and train image.__
+>      ```
+>      # Sift Feature
+>      sift = cv2.xfeatures2d.SIFT_create()
+>      kp_Query_img, desc_Query_img = sift.detectAndCompute(Query_img, None)
+>      ...
+>      ....
+>      while cap.isOpened():
+>          ..
+>          ...
+>          kp_GrayFrame, desc_GrayFrame = sift.detectAndCompute(Train_img, mask=None)
+>      ```
