@@ -80,7 +80,7 @@
 >      H_matrix, mask = cv2.findHomography(query_pts, train_pts, cv2.RANSAC, 5.0)
 >      matches_mask = mask.ravel().tolist()
 >      ```     
->
+>         ![title](/Images/H_matrix.PNG)
 >
 >
 >
