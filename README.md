@@ -8,7 +8,7 @@
   
   
 ###### Execution stages (Goal A – replace image):
-> 1. Working on a photo (One frame)
+>    Working on a photo (One frame)
 >    - Take a photo with the image in it.
 >         
 >           
@@ -94,11 +94,43 @@
 >
 >
 >    - Perform transformation (with same H matrix) to a blank white picture. 
+>       
 >         ![title](/Images/mask_warped.PNG)
 >
 >
 >    - Inverse the blank mask.
+>           
 >         ![title](/Images/inv_mask_warped.PNG)
+>
+>    - Reset the pixels within the black pixel location the mask (bitwise_and)
+>      ```
+>      Mask_Result = cv2.bitwise_and(Inv_Blank_Mask_warped, current_frame)
+>      ```
+>         ![title](/Images/mask_result.PNG)
+>
+>    - Add input picture to the frame.
+>      ```
+>      Result = cv2.add(RGB_Itay_Alex_warped, Mask_Result)
+>      ```
+>         ![title](/Images/result_sift.PNG)
+
+
+###### Execution stages (Goal B – Camera calibration):
+>
+>      - Print Chessboard for calibration.
+>      ```
+>      # Config
+>      square_size = 3.5   # cm
+>      pattern_size = (7, 4)
+>      ```
+>         ![title](/Images/chessboard_for_calibration.PNG)
+>
+>
+>
+>
+>
+>
+>
 >
 >
 >
