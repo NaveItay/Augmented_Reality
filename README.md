@@ -123,22 +123,32 @@
 >      square_size = 3.5   # cm
 >      pattern_size = (7, 4)
 >      ```
->           ![title](/Images/chessboard_for_calibration.PNG)
+>         ![title](/Images/chessboard_for_calibration.PNG)
 >
+>    - Take few photos.
+>         ![title](/Images/few_phot.PNG)
 >
+>    - Find corners with cv2 library.
+>      ```
+>      found, corners = cv2.findChessboardCorners(img, pattern_size)
+>      ```
+>         ![title](/Images/find_corners.PNG)
 >
+>    - Undistorted pictures.
+>      ```
+>      dst = cv2.undistort(imgRGB, camera_matrix, dist_coefs)
+>      ```
+>         ![title](/Images/undistort.PNG)
 >
->
->
->
->
->
->
->
->
->
->
->
+>    - Draw a cube on undistorted pictures.
+>         ![title](/Images/Draw_cube.PNG)
+>     
+>    - Calibration matrix and distortion coefficients to add a 3d object to the video (find rotation and translation vectors).  
+>      ```
+>      camera_matrix = np.float32([[4.33361171e+03, 0.00000000e+00, 2.99003303e+03], [0.00000000e+00, 4.41254035e+03, 2.43338726e+03], [0.00000000e+00, 0.00000000e+00, 1.00000000e+00]])
+>                                 
+>      dist_coeffs = np.float32([[-1.05783249e-02, 2.71079802e-01, -2.68722164e-04, -2.64562464e-03, 2.47868056e-01]])
+>      ```
 >
 >
 >
