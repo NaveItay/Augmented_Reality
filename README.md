@@ -17,8 +17,17 @@
 >    
 >
 >    - Find a good reference to the image.
->      - ![title](/Images/Query_img.PNG)
->     
+>         
+>           
+>         ![title](/Images/Query_img.PNG)
+>
 >    - Choose/Create an image to put into the frame.
->      - ![title](/Images/INPUT_IMG.jpg)
+>         
+>           
+>         ![title](/Images/INPUT_IMG.jpg)
+>
+>    - Find matches with sift algorithm (Photo and reference).
+>         
+>           
+>         ![title](/Images/MachesPlot.PNG)
 >
