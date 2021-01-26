@@ -24,7 +24,7 @@
 >    - Choose/Create an image to put into the frame.
 >         
 >           
->         ![title](/Images/INPUT_IMG.jpg)
+>         ![title](/Images/INPUT_IMG.jpg =100x20)
 >
 >    - Find matches with sift algorithm (Photo and reference).
 >         
