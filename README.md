@@ -150,6 +150,47 @@
 >                                 
 >      dist_coeffs = np.float32([[-1.05783249e-02, 2.71079802e-01, -2.68722164e-04, -2.64562464e-03, 2.47868056e-01]])
 >      ```
+
+
+
+###### Execution stages (Goal C – Insert 3D object):
+> *  Working on a photo (One frame)
+>    - Load a 3D object and transform it (rotation and size)
+>      ```
+>      mesh = trimesh.load('models/drill.obj')
+>      # normalize bounding box from (0,0,0) to max(30)
+>      mesh.rezero()  # set th LOWER LEFT (?) as (0,0,0)
+>      T = np.eye(4)
+>      T[0:3, 0:3] = Drill_Size * np.eye(3)*(1 / np.max(mesh.bounds))
+>      mesh.apply_transform(T)
+>      # rotate to make the drill standup
+>      T = np.eye(4)
+>      T[0:3, 0:3] = rot_x(np.pi/2)
+>      mesh.apply_transform(T)
+>      ```
+>
+>    - Use the H matrix to get warped rectangle points.
+>      -  __Object points – static 4 points (corners) with of the query image rectangle.__
+>      -  __Image points – dynamic 4 points (corners) from the book location on the frame.__
+>         ```
+>         # WarpPerspective
+>         h, w = Query_img.shape
+>         pts = np.float32([[0, 0], [0, h], [w, h], [w, 0]]).reshape(-1, 1, 2)
+>         dst = cv2.perspectiveTransform(pts, H_matrix)
+>         
+>         # ObjectPoints and ImagePoints
+>         zer = np.zeros((pts.shape[0], 1, 1))
+>         ObjectPoints = np.float32(np.append(pts, zer, axis=2))
+>         ImagePoints = dst
+>         ```
+>
+>
+>
+>
+>
+>
+>
+>
 >
 >
 >
