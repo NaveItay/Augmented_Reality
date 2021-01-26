@@ -8,7 +8,7 @@
   
   
 ###### Execution stages (Goal A – replace image):
->    Working on a photo (One frame)
+> *  Working on a photo (One frame)
 >    - Take a photo with the image in it.
 >         
 >           
