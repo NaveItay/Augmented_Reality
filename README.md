@@ -143,7 +143,8 @@
 >    - Draw a cube on undistorted pictures.
 >         ![title](/Images/Draw_cube.PNG)
 >     
->    - Calibration matrix and distortion coefficients to add a 3d object to the video (find rotation and translation vectors).  
+>    - Calibration matrix and distortion coefficients to add a 3d object to the video
+>      (find rotation and translation vectors).  
 >      ```
 >      camera_matrix = np.float32([[4.33361171e+03, 0.00000000e+00, 2.99003303e+03], [0.00000000e+00, 4.41254035e+03, 2.43338726e+03], [0.00000000e+00, 0.00000000e+00, 1.00000000e+00]])
 >                                 
