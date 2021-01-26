@@ -90,7 +90,7 @@
 >      ```
 >         ![title](/Images/warped.PNG)
 >
->
+>      -  __Before pasting this image inside the photo, we need to reset all the pixels that are in the position of the image.__
 >
 >
 >
