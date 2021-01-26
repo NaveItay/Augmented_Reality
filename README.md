@@ -10,13 +10,13 @@
 ###### Execution stages (Goal A – replace image):
 > 1. Working on a photo (One frame)
 >    - Take a photo with the image in it.
->    ![title](/Images/train_img.PNG)
+>      ![title](/Images/train_img.PNG)
 >     
 >    In this photo we can see the train image
 >
 >    - Find a good reference to the image.
->    ![title](/Images/Query_img.PNG)
+>      ![title](/Images/Query_img.PNG)
 >     
 >    - Choose/Create an image to put into the frame.
->    ![title](/Images/INPUT_IMG.jpg)
+>      ![title](/Images/INPUT_IMG.jpg)
 >
