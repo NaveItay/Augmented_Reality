@@ -1,3 +1,6 @@
 # Augmented Reality using python
 
-Insert 3D object to video
+## Project Goals:
+* Goal A: Find an image in a short video and replace it with another image.
+* Goal B: Perform a camera calibration.
+* Goal C: Insert a 3D object into the video.
