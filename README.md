@@ -10,8 +10,6 @@
 ###### Execution stages (Goal A – replace image):
 > 1. Working on a photo (One frame)
 >    - Take a photo with the image in it.
->      ![title](/Images/train_img.PNG)
->       
 >    - ![title](/Images/train_img.PNG)  __In this photo we can see the train image__
 >
 >   
