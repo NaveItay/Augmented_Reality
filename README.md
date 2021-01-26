@@ -83,10 +83,12 @@
 >         ![title](/Images/H_matrix.PNG)
 >
 >
->
->
->
->
+>    - Perform transformation (with H matrix) on input image (the image we want to put into the video).
+>      ```
+>      # WarpPerspective
+>      RGB_Itay_Alex_warped = cv2.warpPerspective(RGB_Itay_Alex, H_matrix, (Train_img.shape[1], Train_img.shape[0]))
+>      ```
+>         ![title](/Images/warped.PNG)
 >
 >
 >
