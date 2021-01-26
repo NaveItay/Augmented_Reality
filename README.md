@@ -61,10 +61,17 @@
 >      
 >      
 >      
->      
->      
->      
+>      -  __Filter the matches using the distance ratio on the descriptors.__
 >      ```
+>      # Matches Filter
+>      good_points = []
+>      for m, n in matches:
+>          if m.distance < 0.5 * n.distance:
+>              good_points.append(m)
+>      ```       
+>      
+>      
+>      
 >
 >
 >
