@@ -16,7 +16,7 @@
 >
 >    - Find a good reference to the image.
 >    ![title](/Images/Query_img.PNG)
->
->
->
+>     
+>    - Choose/Create an image to put into the frame.
+>    ![title](/Images/INPUT_IMG.jpg)
 >
