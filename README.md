@@ -1,5 +1,10 @@
 # Augmented Reality using python
 ![title](/Images/introduction.PNG)
+
+###### Video Link
+ 
+- Link to [Youtube](https://youtu.be/oSEigR2pRhY).
+
 ## Project Goals:
 * Goal A: Find an image in a short video and replace it with another image.
 * Goal B: Perform a camera calibration.
@@ -204,7 +209,3 @@
 >         ```
 >         ![title](/Images/3D_result.PNG)
 >
-
-###### Video Link
-> 
-> Link to [Youtube](https://youtu.be/oSEigR2pRhY).
