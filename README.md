@@ -1,4 +1,4 @@
-# Augmented Reality using python
+# Augmented Reality
 ![title](/Images/introduction.PNG)
 
 ###### Video Link
